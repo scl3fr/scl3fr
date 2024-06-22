@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <body>
+            <h1 class="negr">Комментарии</h1>
+            <div class="input">
+            <input type="text" id="author" />Ваше имя
+            <input type="text" id="body" />Ваш комментарий
+            </div>
+            <div class="button12" ><button id="button">
+                <h>Отправить комментарий</h>
+            </button></div>
+            <div  class="body" id="comments"></div>
+        </body>
+    </head>
+
+
+    <style>
+        body{background-color: darkgray;}
+        .negr{text-align: center;}
+        .body{border: 1px solid;margin:40px}
+        .button12{margin:30px}
+        .input{margin-left:30px}
+    </style>
+
+
+    <script>
+        let author = document.getElementById("author")
+        let body = document.getElementById("body")
+        let button = document.getElementById("button")
+        let comments = document.getElementById("comments")
+
+        function enter () {comments.innerHTML += `<div><h3>${author.value}</h3><p>${body.value}</p></div>`; author.value = ""; body.value = "";}
+
+        button.onclick = enter;
+    </script>
+</html>
