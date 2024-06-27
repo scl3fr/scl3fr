@@ -7,8 +7,15 @@
         </head>
         <body>
             <div class="divisor">
-            <div class="menu"><sapn style="font-weight: bold">Меню</sapn></div>
-            <div class="content"><sapn style= "font-weight: bold">Контент</sapn>
+            <div class="menu"><sapn style="font-weight: bold; margin-top:30px;">Меню</sapn>
+            <div class="href"><a href="Ресурсы.html">Ресурсы</a></div>
+            <div class="href"><a href="guns.html">Оружие</a></div>
+            <div class="href"><a href="Workbenches.html">Верстаки</a></div>
+            <div class="href"><a href="raids.html">Рейды</a></div>
+            <div class="href"><a href="GreenZone.html">Город</a></div>
+            </div>
+            
+            <div class="content"><sapn style= "font-weight: bold;margin-top:30px;">Контент</sapn>
             <div class="text">
                 «Опасный поворот» — советский чёрно-белый, широкоэкранный телефильм 1972 года. Трёхсерийная экранизация одноимённой пьесы британского драматурга Дж. Б. Пристли, поставленная режиссёром Владимиром Басовым. В фильме снимались: Юрий Яковлев, Валентина Титова, Александр Дик, Елена Валаева, Антонина Шуранова, Владимир Басов, Руфина Нифонтова. Второй телефильм киностудии «Мосфильм», снятый многокамерным кинотелевизионным способом с использованием системы «Электроник-КАМ». Первым таким советским фильмом был экспериментальный «Теперь пусть уходит» (1964), также по одноимённой пьесе Пристли. Премьерный показ «Опасного поворота» прошёл в эфире Первой программы Центрального телевидения СССР 16—17 декабря 1972 года. Фильм получил благожелательные отзывы критиков и был популярен у телезрителей долгие годы.
             </div>
@@ -21,7 +28,7 @@
             <div class="text">
                 «Опасный поворот» — советский чёрно-белый, широкоэкранный телефильм 1972 года. Трёхсерийная экранизация одноимённой пьесы британского драматурга Дж. Б. Пристли, поставленная режиссёром Владимиром Басовым. В фильме снимались: Юрий Яковлев, Валентина Титова, Александр Дик, Елена Валаева, Антонина Шуранова, Владимир Басов, Руфина Нифонтова. Второй телефильм киностудии «Мосфильм», снятый многокамерным кинотелевизионным способом с использованием системы «Электроник-КАМ». Первым таким советским фильмом был экспериментальный «Теперь пусть уходит» (1964), также по одноимённой пьесе Пристли. Премьерный показ «Опасного поворота» прошёл в эфире Первой программы Центрального телевидения СССР 16—17 декабря 1972 года. Фильм получил благожелательные отзывы критиков и был популярен у телезрителей долгие годы.
             </div>
-            <button class="negro" id="enter">Оставь свой комментарий</button>
+            <button class="negro" id="enter">Оставь свой комментарий</button>  
         </div>
         </div>
         <div class="footer"><p>Сайт создан Александром в 2024</p>
@@ -30,36 +37,40 @@
     <style>
         .divisor{display:flex;}
         .menu{background-color: rgb(169, 169, 169); width:30%; text-align: center;font-size: large;}
-        .content{background-color: rgb(255, 94, 94); width:70%;text-align: center; font-size: large;}
+        .content{background-color: rgb(255, 88, 88); width:70%;text-align: center; font-size: large;}
         .header{background-color: rgb(143, 143, 143); text-align: center;}
         .footer{background-color: rgba(255, 255, 255, 0.774); text-align: center; height:10%; padding:1%;}
         body{margin:0%;}
         .logo1{display:flex; height:10%;}
         .logo{height: 90px;}
         .header{width:100%;}
-        .logo2{height:20px;}
+        .logo2{height:20px;}   
         .tg{display:flex;}
-        .text{display:flex; border: 1px solid; margin:50px; justify-content:center;
+        .text{display:flex; border: 1px solid rgb(255, 88, 88); margin:50px; justify-content:center;
         box-shadow: 0px 0px 30px inset grey; font-size: 19px; transition: 0.25s;}
         .text:hover {
-            border: 1px solid blue;
+            border: 1px solid rgb(255, 88, 88);
             box-shadow: 0px 0px 30px grey;
         }
-        ..negro{display: flex; justify-content: center; margin-left: 35%;}
+        .negro{display: flex; justify-content: center; margin-left: 35%;}
          .negro{
-            background-color:rgb(25, 44, 255);
-            box-shadow: 0px 0px 10px rgb(25, 44, 255);
+            background-color:darkgray;
+            box-shadow: 0px 0px 10px darkgray;
             font-size: 29px;
             transition: 0.3s;
             margin: 100px;
+            border-color:darkgrey;
             
          }
         .negro:hover {
             background-color: black;
-            color: rgb(25, 44, 255);
+            color: darkgray;
             box-shadow: 0px 0px 10px black;
             font-size: 30px;
+            border-color:rgb(0, 0, 0) ;
         }
+        .href{margin:160px; border: 1px solid darkgray; transition: 0.2s; }
+        .href:hover{box-shadow: 0px 0px 10px inset black;}
     </style>
     <script>
         let enterIN = document.getElementById("enter")
